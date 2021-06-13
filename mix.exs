@@ -8,7 +8,7 @@ defmodule PhoenixRedisSession.MixProject do
   def project do
     [
       app: :phoenix_redis_session,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.8",
       name: "PhoenixRedisSession",
       description: @description,
@@ -37,10 +37,10 @@ defmodule PhoenixRedisSession.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:poison, "~> 3.1"},
+      {:poison, "~> 4.0"},
       {:redix, ">= 0.0.0"},
-      {:ex_doc, "~> 0.19.3", only: :dev},
-      {:credo, "~> 1.0", only: [:dev, :test], runtime: false}
+      {:ex_doc, "~> 0.24.2", only: :dev},
+      {:credo, "~> 1.5", only: [:dev, :test], runtime: false}
     ]
   end
 end
